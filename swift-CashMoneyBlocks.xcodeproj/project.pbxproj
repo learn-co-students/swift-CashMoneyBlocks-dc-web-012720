@@ -7,20 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D804EF171A2B604D0039A407 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804EF011A2B60300039A407 /* Quick.framework */; };
+		D804EF181A2B60560039A407 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804EF101A2B60380039A407 /* Nimble.framework */; };
 		D80761B81A294A8B0058E9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761B71A294A8B0058E9E8 /* AppDelegate.swift */; };
 		D80761BA1A294A8B0058E9E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761B91A294A8B0058E9E8 /* ViewController.swift */; };
 		D80761BD1A294A8B0058E9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80761BB1A294A8B0058E9E8 /* Main.storyboard */; };
 		D80761BF1A294A8B0058E9E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80761BE1A294A8B0058E9E8 /* Images.xcassets */; };
 		D80761C21A294A8B0058E9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80761C01A294A8B0058E9E8 /* LaunchScreen.xib */; };
-		D80761CE1A294A8B0058E9E8 /* swift_CashMoneyBlocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761CD1A294A8B0058E9E8 /* swift_CashMoneyBlocksTests.swift */; };
 		D80761D81A29FC5A0058E9E8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761D71A29FC5A0058E9E8 /* Product.swift */; };
 		D80761DA1A29FC680058E9E8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761D91A29FC680058E9E8 /* State.swift */; };
 		D80761DC1A29FC6E0058E9E8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761DB1A29FC6E0058E9E8 /* Store.swift */; };
 		D80761DE1A29FC780058E9E8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761DD1A29FC780058E9E8 /* Transaction.swift */; };
 		D80761E01A2A03690058E9E8 /* CashRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761DF1A2A03690058E9E8 /* CashRegister.swift */; };
+		D84EE7991A2B60B800380893 /* cashRegisterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84EE7981A2B60B800380893 /* cashRegisterSpec.swift */; };
+		D84EE79A1A2B61C400380893 /* CashRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761DF1A2A03690058E9E8 /* CashRegister.swift */; };
+		D84EE79B1A2B61F200380893 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761D71A29FC5A0058E9E8 /* Product.swift */; };
+		D84EE79C1A2B61F600380893 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761D91A29FC680058E9E8 /* State.swift */; };
+		D84EE79D1A2B61FA00380893 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761DB1A29FC6E0058E9E8 /* Store.swift */; };
+		D84EE79E1A2B61FD00380893 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80761DD1A29FC780058E9E8 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D804EF001A2B60300039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EEF91A2B60300039A407 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		D804EF021A2B60300039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EEF91A2B60300039A407 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		D804EF041A2B60300039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EEF91A2B60300039A407 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		D804EF061A2B60300039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EEF91A2B60300039A407 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		D804EF0F1A2B60380039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EF081A2B60380039A407 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		D804EF111A2B60380039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EF081A2B60380039A407 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		D804EF131A2B60380039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EF081A2B60380039A407 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		D804EF151A2B60380039A407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D804EF081A2B60380039A407 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
+		};
 		D80761C81A294A8B0058E9E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D80761AA1A294A8B0058E9E8 /* Project object */;
@@ -31,6 +94,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D804EEF91A2B60300039A407 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D804EF081A2B60380039A407 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D80761B21A294A8B0058E9E8 /* swift-CashMoneyBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-CashMoneyBlocks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80761B61A294A8B0058E9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80761B71A294A8B0058E9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +105,13 @@
 		D80761C11A294A8B0058E9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D80761C71A294A8B0058E9E8 /* swift-CashMoneyBlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-CashMoneyBlocksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80761CC1A294A8B0058E9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D80761CD1A294A8B0058E9E8 /* swift_CashMoneyBlocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_CashMoneyBlocksTests.swift; sourceTree = "<group>"; };
 		D80761D71A29FC5A0058E9E8 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D80761D91A29FC680058E9E8 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		D80761DB1A29FC6E0058E9E8 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D80761DD1A29FC780058E9E8 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		D80761DF1A2A03690058E9E8 /* CashRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashRegister.swift; sourceTree = "<group>"; };
+		D84EE7971A2B60B700380893 /* swift-CashMoneyBlocksTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-CashMoneyBlocksTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D84EE7981A2B60B800380893 /* cashRegisterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashRegisterSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +126,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D804EF181A2B60560039A407 /* Nimble.framework in Frameworks */,
+				D804EF171A2B604D0039A407 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D804EEFA1A2B60300039A407 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D804EF011A2B60300039A407 /* Quick.framework */,
+				D804EF031A2B60300039A407 /* Quick-OSXTests.xctest */,
+				D804EF051A2B60300039A407 /* Quick.framework */,
+				D804EF071A2B60300039A407 /* Quick-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D804EF091A2B60380039A407 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D804EF101A2B60380039A407 /* Nimble.framework */,
+				D804EF121A2B60380039A407 /* NimbleTests.xctest */,
+				D804EF141A2B60380039A407 /* Nimble.framework */,
+				D804EF161A2B60380039A407 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D80761A91A294A8B0058E9E8 = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +203,11 @@
 		D80761CA1A294A8B0058E9E8 /* swift-CashMoneyBlocksTests */ = {
 			isa = PBXGroup;
 			children = (
-				D80761CD1A294A8B0058E9E8 /* swift_CashMoneyBlocksTests.swift */,
+				D804EF081A2B60380039A407 /* Nimble.xcodeproj */,
+				D804EEF91A2B60300039A407 /* Quick.xcodeproj */,
 				D80761CB1A294A8B0058E9E8 /* Supporting Files */,
+				D84EE7981A2B60B800380893 /* cashRegisterSpec.swift */,
+				D84EE7971A2B60B700380893 /* swift-CashMoneyBlocksTests-Bridging-Header.h */,
 			);
 			path = "swift-CashMoneyBlocksTests";
 			sourceTree = "<group>";
@@ -194,6 +287,16 @@
 			mainGroup = D80761A91A294A8B0058E9E8;
 			productRefGroup = D80761B31A294A8B0058E9E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D804EF091A2B60380039A407 /* Products */;
+					ProjectRef = D804EF081A2B60380039A407 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = D804EEFA1A2B60300039A407 /* Products */;
+					ProjectRef = D804EEF91A2B60300039A407 /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D80761B11A294A8B0058E9E8 /* swift-CashMoneyBlocks */,
@@ -201,6 +304,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D804EF011A2B60300039A407 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = D804EF001A2B60300039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF031A2B60300039A407 /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = D804EF021A2B60300039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF051A2B60300039A407 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = D804EF041A2B60300039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF071A2B60300039A407 /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = D804EF061A2B60300039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF101A2B60380039A407 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = D804EF0F1A2B60380039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF121A2B60380039A407 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = D804EF111A2B60380039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF141A2B60380039A407 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = D804EF131A2B60380039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D804EF161A2B60380039A407 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = D804EF151A2B60380039A407 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D80761B01A294A8B0058E9E8 /* Resources */ = {
@@ -241,7 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80761CE1A294A8B0058E9E8 /* swift_CashMoneyBlocksTests.swift in Sources */,
+				D84EE79D1A2B61FA00380893 /* Store.swift in Sources */,
+				D84EE7991A2B60B800380893 /* cashRegisterSpec.swift in Sources */,
+				D84EE79E1A2B61FD00380893 /* Transaction.swift in Sources */,
+				D84EE79A1A2B61C400380893 /* CashRegister.swift in Sources */,
+				D84EE79B1A2B61F200380893 /* Product.swift in Sources */,
+				D84EE79C1A2B61F600380893 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -387,6 +555,8 @@
 				INFOPLIST_FILE = "swift-CashMoneyBlocksTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-CashMoneyBlocksTests/swift-CashMoneyBlocksTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-CashMoneyBlocks.app/swift-CashMoneyBlocks";
 			};
 			name = Debug;
@@ -395,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -402,6 +573,7 @@
 				INFOPLIST_FILE = "swift-CashMoneyBlocksTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-CashMoneyBlocksTests/swift-CashMoneyBlocksTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-CashMoneyBlocks.app/swift-CashMoneyBlocks";
 			};
 			name = Release;
@@ -425,6 +597,7 @@
 				D80761D31A294A8B0058E9E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D80761D41A294A8B0058E9E8 /* Build configuration list for PBXNativeTarget "swift-CashMoneyBlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +606,7 @@
 				D80761D61A294A8B0058E9E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
