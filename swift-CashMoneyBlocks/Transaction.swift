@@ -20,9 +20,9 @@ class Transaction: NSObject {
         self.quantity = quantity
         self.fullTransactionValue = product.price * Float(quantity)
         
-        if let tempDateOfTransaction = dateOfTransaction
+        if dateOfTransaction == nil
         {
-            self.dateOfTransaction = tempDateOfTransaction
+            self.dateOfTransaction = dateOfTransaction!
 
         } else
         {
