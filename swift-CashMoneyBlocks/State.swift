@@ -11,13 +11,11 @@ import UIKit
 class State: NSObject {
     var name : String
     var abbreviation : String
-    var cashRegister : CashRegister
 
-    init(name : String, abbreviation : String, cashRegister : CashRegister)
+    init(name : String, abbreviation : String)
     {
         self.name = name
         self.abbreviation = abbreviation
-        self.cashRegister = cashRegister
     }
 
     func taxRate() -> Float

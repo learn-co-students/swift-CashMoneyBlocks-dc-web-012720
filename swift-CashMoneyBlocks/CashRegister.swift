@@ -9,12 +9,17 @@
 import UIKit
 
 class CashRegister: NSObject {
-    let store : Store
-    let transactions : [Transaction]
-    let taxLogic : (transaction : Transaction) -> Float
-    let couponLogic : (transaction : Transaction) -> Float
+    var store : Store?
+    var transactions : [Transaction]
+    var taxLogic : ((transaction : Transaction) -> Float)?
+    var couponLogic : ((transaction : Transaction) -> Float)?
 
-    init (store: Store, taxLogic : (transaction : Transaction) -> Float, couponLogic : (transaction : Transaction) -> Float)
+    convenience override init()
+    {
+        self.init(store: nil,taxLogic: nil,couponLogic: nil)
+    }
+    
+    init (store: Store?, taxLogic : ((transaction : Transaction) -> Float)?, couponLogic : ((transaction : Transaction) -> Float)?)
     {
         self.store = store
         self.taxLogic = taxLogic
@@ -25,10 +30,13 @@ class CashRegister: NSObject {
     func applyCoupons() -> Float
     {
         var totalSaved : Float = 0
-        for transaction in transactions
+        for transaction in self.transactions
         {
-            let saved = self.couponLogic(transaction: transaction)
-            totalSaved += saved
+            if self.couponLogic != nil
+            {
+                let saved = self.couponLogic!(transaction: transaction)
+                totalSaved += saved
+            }
         }
 
         return totalSaved
@@ -39,8 +47,11 @@ class CashRegister: NSObject {
         var totalTax : Float = 0
         for transaction in transactions
         {
-            let tax = self.taxLogic(transaction: transaction)
-            totalTax += tax
+            if self.taxLogic != nil
+            {
+                let tax = self.taxLogic!(transaction: transaction)
+                totalTax += tax
+            }
         }
 
         return totalTax

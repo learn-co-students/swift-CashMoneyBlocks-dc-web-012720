@@ -13,6 +13,7 @@ class Store: NSObject {
     let city : String
     let storeID : String
     let cashRegister : CashRegister
+    let taxRate : Float
 
     init(state : State, city : String, storeID : String, cashRegister : CashRegister)
     {
@@ -20,6 +21,13 @@ class Store: NSObject {
         self.city = city
         self.storeID = storeID
         self.cashRegister = cashRegister
+        if self.state.abbreviation == "NY"
+        {
+            self.taxRate = 0.10;
+        } else
+        {
+            self.taxRate = 0.07;
+        }
     }
 
 }
