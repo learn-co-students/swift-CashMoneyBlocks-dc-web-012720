@@ -4,9 +4,23 @@ import swift_CashMoneyBlocks
 
 class cashRegisterSpec: QuickSpec {
     override func spec() {
-        beforeEach() {
-            let apple = Product(productDescription: "Apple", upc: "0000000000415", price: 0.95, measure: "ea", category: ProductCategory.Grocery)
-            
-        }
+
+        var cashRegister : CashRegister = CashRegister()
+
+
+        // Setup Test Data
+
+        describe("applyCoupon Method", {
+            it("should return the coupon discount of all transactions for a register", {
+                // Add couponLogic
+                expect(cashRegister.applyCoupons()).to(equal(13.66))
+            })
+        })
+        describe("calculateTax Method",{
+            it("should return the tax of all transactions for a register",{
+                // Add taxLogic
+                expect(cashRegister.calculateTax()).to(equal(2.999))
+            })
+        })
     }
 }
