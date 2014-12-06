@@ -81,67 +81,6 @@ class cashRegisterSpec: QuickSpec {
                 expect(cashRegister.applyCoupons()).to(equal(13.66))
             })
         })
-/*
-NSNumber *taxAmount = @([transaction.product.price floatValue] * [store.state.taxRate floatValue]);
-
-NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-
-NSDateComponents *components = [[NSDateComponents alloc] init];
-
-switch (transaction.product.productCategory) {
-case ProductCategoryGrocery:
-
-return @0;
-
-case ProductCategoryApparel:
-
-if ([store.state.abbreviation isEqualToString:@"NY"] &&  [transaction.product.price floatValue]  < 100)
-{
-return @0;
-}
-
-return taxAmount;
-
-case ProductCategoryEducation:
-{
-components.calendar = calendar;
-components.year = 2014;
-components.month = 8;
-components.day = 1;
-components.hour = 0;
-components.minute = 0;
-components.second = 0;
-
-NSDate *startOfSchoolShoppingSeason = [calendar dateFromComponents:components];
-
-components.calendar = calendar;
-components.year = 2014;
-components.month = 9;
-components.day = 30;
-components.hour = 23;
-components.minute = 59;
-components.second = 59;
-
-NSDate *endOfSchoolShoppingSeason = [calendar dateFromComponents:components];
-
-if (([transaction.dateOfTransaction compare:startOfSchoolShoppingSeason] == NSOrderedAscending) && ([transaction.dateOfTransaction compare:endOfSchoolShoppingSeason] == NSOrderedDescending)) {
-return @0;
-}
-
-return taxAmount;
-
-}
-case ProductCategoryLuxuryItem:
-
-return @([taxAmount floatValue] * 2);
-
-default:
-return taxAmount;
-}
-
-return nil;
-
-*/
         describe("calculateTax Method",{
             it("should return the tax of all transactions for a register",{
                 cashRegister.taxLogic = { (transaction: Transaction) -> Float in
