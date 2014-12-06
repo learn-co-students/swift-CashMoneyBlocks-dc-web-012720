@@ -5,7 +5,7 @@ import swift_CashMoneyBlocks
 class cashRegisterSpec: QuickSpec {
     override func spec() {
 
-        var cashRegister : CashRegister = CashRegister()
+        var cashRegister : CashRegister = CashRegister(store: nil, taxLogic: nil, couponLogic: nil)
         let newYork = State(name: "New York", abbreviation: "NY")
 
         beforeEach() {
@@ -63,7 +63,7 @@ class cashRegisterSpec: QuickSpec {
 
             let date4 = calendar?.dateFromComponents(components)
             let transaction6 = Transaction(product: functionalProgrammingWithSwiftBook, quantity: 1, dateOfTransaction: date4)
-            cashRegister = CashRegister()
+            cashRegister = CashRegister(store: nil, taxLogic: nil, couponLogic: nil)
             cashRegister.transactions = [transaction1,transaction2,transaction3,transaction4,transaction5,transaction6]
             let myStore = Store(state: newYork, city: "New York", storeID: "123", cashRegister: cashRegister)
             cashRegister.store = myStore

@@ -10,21 +10,15 @@ import UIKit
 
 class CashRegister: NSObject {
     var store : Store?
-    var transactions : [Transaction]
+    var transactions : [Transaction] = [Transaction]()
     var taxLogic : ((transaction : Transaction) -> Float)?
     var couponLogic : ((transaction : Transaction) -> Float)?
 
-    convenience override init()
-    {
-        self.init(store: nil,taxLogic: nil,couponLogic: nil)
-    }
-    
     init (store: Store?, taxLogic : ((transaction : Transaction) -> Float)?, couponLogic : ((transaction : Transaction) -> Float)?)
     {
         self.store = store
         self.taxLogic = taxLogic
         self.couponLogic = couponLogic
-        self.transactions = [Transaction]()
     }
 
     func applyCoupons() -> Float
