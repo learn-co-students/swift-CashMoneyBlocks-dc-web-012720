@@ -1,7 +1,4 @@
----
-tags: blocks, closures
-languages: swift
----
+
 
 # CashMoneyBlocks
 
