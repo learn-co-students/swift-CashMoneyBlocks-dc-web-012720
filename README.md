@@ -156,5 +156,3 @@ cashRegister.store = myStore
 * In our contrived example, the tax gets applied to the items gross price (i.e. before the coupon discount gets applied). Feel free to try to get fancy and make them work together if you get this far!
 
 <a href='https://learn.co/lessons/swift-CashMoneyBlocks' data-visibility='hidden'>View this lesson on Learn.co</a>
-
-<a href='https://learn.co/lessons/swift-CashMoneyBlocks' data-visibility='hidden'>View this lesson on Learn.co</a>
